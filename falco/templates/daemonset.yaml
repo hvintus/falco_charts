@@ -141,6 +141,9 @@ spec:
             {{- if .Values.extraVolumeMounts }}
 {{ toYaml .Values.extraVolumeMounts | indent 12 }}
             {{- end }}
+        {{- if .Values.extraContainers }}
+{{ toYaml .Values.extraContainers | indent 12 }}
+        {{- end }}
       {{- if .Values.extraInitContainers }}
       initContainers:
 {{ toYaml .Values.extraInitContainers | indent 12 }}

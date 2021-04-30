@@ -321,6 +321,9 @@ scc:
   # true here enabled creation of Security Context Constraints in Openshift
   create: true
 
+# Add extra containers to Falco pod
+extraContainers: []
+
 # Add initContainers to Falco pod
 extraInitContainers: []
 
